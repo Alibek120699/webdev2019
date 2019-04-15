@@ -11,12 +11,14 @@ def task_lists(request):
     }
     return JsonResponse(data, safe=False)
 
-def task_lists_num(request, num):
-    json_tasks = TaskList.objects.get(id = num).to_json()
+def task_lists_num(request, pk):
+    json_tasks = TaskList.objects.get(id = pk).to_json()
     data = {
         'task_list': json_tasks
     }
     return JsonResponse(data, safe=False)
+
+
 
 def task_lists_num_tasks(request, num):
     json_tasks_1 = TaskList.objects.get(id = num)
