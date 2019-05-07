@@ -3,5 +3,5 @@
 
 
 # from .cbv import TaskLists, TaskListDetail, TasksOfTaskList
-from .generic_cbv import TaskLists, TaskListDetail
+from .generic_cbv import TaskLists, TaskListDetail, TasksOfTaskList
 from .auth import UserList, login, logout

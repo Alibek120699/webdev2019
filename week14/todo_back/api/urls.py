@@ -11,7 +11,8 @@ urlpatterns = [
     #path('tasklist/<int:pk>/tasks/', views.TasksOfTaskList.as_view()),
     path('tasklist/', views.TaskLists.as_view()),
     path('tasklist/<int:pk>/', views.TaskListDetail.as_view()),
+    path('tasklist/<int:pk>/tasks/', views.TasksOfTaskList.as_view()),
     path('users/', views.UserList.as_view()),
     path('login/', views.login),
-    path('logout/', views.logout)
+    path('logout/', views.logout),
 ]
