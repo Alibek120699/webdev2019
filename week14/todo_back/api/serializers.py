@@ -10,11 +10,11 @@ class UserSerializer(serializers.ModelSerializer):
 class TaskSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(required=True)
-    tasklist_id = serializers.IntegerField(write_only=True)
+    #tasklist_id = serializers.IntegerField(write_only=True)
 
     class Meta:
         model = Task
-        fields = ('id', 'name', 'tasklist_id', )
+        fields = ('id', 'name',)
 
 class TaskListSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(read_only=True)
